@@ -33,3 +33,8 @@ th {
 button {
   margin-top: 0.5rem;
 }
+
+.center{
+  display: inline-block;
+  justify-content: center;
+}
