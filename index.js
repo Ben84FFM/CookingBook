@@ -10,5 +10,5 @@ function mouseOver() {
   const res = document.querySelector('.title').innerText;
   const img= document.getElementById("tip");
   img.title=res;
-  img.style="cursor: pointer;"
+  img.style="cursor: pointer; border-radius: 20px;";
 }
