@@ -11,10 +11,11 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2>Süsskartoffel-Curry mit Tofu und Spinat</h2>
+    <section id="hero" class="bg-body-tertiary text-reset text-center text-sm-start px-5 " >
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-center"> 
+          <div class="py-3">
+          <h2 class="text-info title">Süsskartoffel-Curry mit Tofu und Spinat</h2>
 
           <p>
             Das Süsskartoffel-Curry mit gebratenem Tofu und Shiitake zeichnet
@@ -25,7 +26,8 @@
           <img
             src="../images/joe-curry.jpg"
             alt="Süsskartoffel-Curry"
-            title="Süsskartoffel-Curry"
+            title="Süsskartoffel-Curry" class="img-fluid w-50" onmouseover="mouseOver()"
+            id="tip" style="border-radius: 20px;"
           />
           <div class="table-responsive">
             <table class="table border border-primary-subtle">
@@ -110,9 +112,12 @@
                 </tr>
               </tbody>
             </table>
+            <button type="button" class="btn btn-primary" onclick="shareRecipe()"">Share</button>
           </div>
         </div>
       </div>
     </div>
+    </section>
+    <script src="../index.js"></script>
   </body>
 </html>

@@ -12,3 +12,10 @@ function mouseOver() {
   img.title=res;
   img.style="cursor: pointer; border-radius: 20px;";
 }
+
+function shareRecipe() {
+  
+  alert('Hallo! Hier ist unsere Rezepte');
+}
+
+

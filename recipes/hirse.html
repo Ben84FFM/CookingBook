@@ -3,24 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2>Warmes Hirse-Frühstück</h2>
+    <section id="hero" class="bg-body-tertiary text-reset text-center text-sm-start px-5 " >
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-center"> 
+          <div class="py-3">
+          <h2 class="text-info title">Warmes Hirse-Frühstück</h2>
 
           <p>
             Dieses knusprige Hirse-Frühstück ist sehr lecker und anhaltend
             sättigend – der ideale Start in den Tag.
           </p>
-          <img src="../images/joe-hirse.jpg" alt="Hirsebrei" />
+          <img src="../images/joe-hirse.jpg" alt="Hirsebrei" class="img-fluid w-50" onmouseover="mouseOver()"
+          id="tip" style="border-radius: 20px;"/>
           <div class="table-responsive">
             <table class="table border border-primary-subtle">
               <thead>
@@ -68,9 +66,12 @@
                 </tr>
               </tbody>
             </table>
+            <button type="button" class="btn btn-primary" onclick="shareRecipe()"">Share</button>
           </div>
         </div>
       </div>
     </div>
+    </section>
+    <script src="../index.js"></script>
   </body>
 </html>

@@ -18,7 +18,7 @@
 
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-6 col-12">
+      
           <div class="navbar navbar-expand-md bg-body-secondary text-info">
             <div class="container">
               <a href="#" class="navbar-brand">Kochbuch</a>
@@ -49,15 +49,27 @@
 
           <div class="sidebar">
             <div
-              class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white object-fit-cover img-fluid img-responsive"
-              style="background-image: url('./images/kochbuch.jpg')"
+              class="bg-image p-5 text-center  mb-3 text-light "
+              style="background-image: url('./images/kochbuch.jpg');background-size: cover;"
             >
-              <h2 class="mb-3 h2">Rezepte</h2>
-              <p>Ideen für ein par leckereien - Bon appetito!</p>
+              <h2 class="text-warning text-xl-center fs-1 fw-bold" style=" text-shadow:
+              1px 1px 2px black,
+              0 0 1em rgb(211, 211, 139),
+              0 0 0.2em rgb(211, 211, 139);
+            color: white;
+            
+            font-style: italic;">Rezepte</h2>
+              <p class="text-warning font-weight-bold fs-3 fw-bold" style="text-shadow:
+              1px 1px 2px black,
+              0 0 1em rgb(211, 211, 139),
+              0 0 0.2em rgb(211, 211, 139);
+            color: white;
+            
+            font-style: italic;">Ideen für ein par leckereien - Bon appetito!</p>
             </div>
 
             <select id="recipe-list" class="form-control text-center">
-              <option value="">Select a Category</option>
+              <option value="">Kategorie auswählen</option>
               <!-- -------------Frühstück--------------- -->
               <optgroup label="Frühstück">
                 <option value="recipes/früh-AmerikanischePancakes.html">
@@ -99,7 +111,12 @@
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"
           ></script>
-        </div>
+          <footer class="bg-body-tertiary text-center text-lg-start">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2023 Copyright:
+              <a class="text-body" href="https://mdbootstrap.com/">Ben Joe Issa</a>
+            </div>
+          </footer>
       </div>
     </div>
   </body>
